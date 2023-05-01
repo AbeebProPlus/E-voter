@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="app-gateway" />
+        <module name="data-service" />
+        <module name="mailing-service" />
+        <module name="voting-service" />
+        <module name="registration-service" />
+        <module name="service-registry" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="app-gateway" target="17" />
+      <module name="candidate-registration-service" target="17" />
+      <module name="data-service" target="17" />
+      <module name="mailing-service" target="17" />
+      <module name="registration-service" target="17" />
+      <module name="service-registry" target="17" />
+      <module name="voter-registration-service" target="17" />
+      <module name="voting-service" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="app-gateway" options="-parameters" />
+      <module name="candidate-registration-service" options="-parameters" />
+      <module name="data-service" options="-parameters" />
+      <module name="mailing-service" options="-parameters" />
+      <module name="registration-service" options="-parameters" />
+      <module name="service-registry" options="-parameters" />
+      <module name="voter-registration-service" options="-parameters" />
+      <module name="voting-service" options="-parameters" />
+    </option>
+  </component>
+</project>
